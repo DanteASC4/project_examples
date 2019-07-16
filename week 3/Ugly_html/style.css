@@ -1,0 +1,101 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css?family=Dosis|Tangerine|Unica+One&display=swap');
+
+/*
+font-family: 'Tangerine', cursive;
+font-family: 'Unica One', cursive;
+font-family: 'Dosis', sans-serif;
+*/
+
+/* Using the :root element to define some color variables */
+:root{
+  --main-bg-color: rgb(53, 53, 53);
+  --all-text-color: whitesmoke;
+  --border-color: #FDEFA6;
+  --body-bg-color: #1A1818;
+}
+
+/*
+One way tothink of the task that might be helpful is to look at the available html tags, and classes. Then look at the wireframe and match the wireframe styles to the corresponding html tag/class
+*/
+
+
+/* Setting the page background color */
+html{
+  background-color: var(--main-bg-color);
+}
+
+/* Setting all the text to the given color */
+*{
+  color:var(--all-text-color);
+}
+
+.top{
+  width: 100%;
+  text-align: center;
+}
+
+header{
+  font-family: 'Tangerine', cursive;
+  font-size: 72px;
+}
+.top > h3{
+  font-family: 'Unica One';
+  font-size: 26px;
+}
+
+/* There are many ways to target html elements! */
+img[alt="Many Watches"]{
+  display: block;
+  margin: 0 auto 0 auto;
+  width: 540px;
+}
+
+.all_watches_container{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 50px 0px 50px;
+
+}
+.all_watches_container img{
+  margin: 0px 10px 0px 10px;
+  max-height: 200px;
+  float: left;
+}
+.all_watches_container h2{
+  font-family: 'Unica One';
+  font-size: 26px;
+  margin: 16px 0px 16px 0px;
+}
+
+article p{
+  font-family: 'Dosis';
+  font-size: 16px;
+}
+
+.watch_container{
+  background-color: var(--body-bg-color);
+  border: solid 2px var(--border-color);
+  border-radius: 13px;
+  margin-bottom: 15px;
+  padding: 16px;
+}
+
+footer{
+  margin: 10px 0px 25px 0px;
+  font-family: 'Dosis';
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
