@@ -1,0 +1,93 @@
+:root{
+  /* Color Variables */
+  --sign-in-text: #13AA52;
+  --normal-text: #798186;
+  --banner-bg: #273742;
+}
+
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html{
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+
+#banner{
+  z-index: 10;
+  width: 100vw;
+  height: 40px;
+  position: relative;
+  background-color: var(--banner-bg);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  color: var(--sign-in-text);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+#banner-img {
+  height: 24px;
+  width: 24px;
+}
+.bText{
+  margin-left: 5px;
+}
+
+.mContainer{
+  width: 100%;
+  display: inline;
+  margin: 10px 0px 0px 0px;
+  color: var(--normal-text);
+  font-family: 'Roboto', sans-serif;
+}
+.sharedStyles{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  height: 150px;
+}
+.item{
+  margin: 0px 10px 0px 5px;
+  cursor:pointer;
+  z-index: -10;
+}
+.item:hover{
+  color: var(--sign-in-text);
+}
+.navLeft{
+  left: 0;
+  position: absolute;
+  margin: 0px 0px 0px 30px;
+}
+
+.navRight {
+  right: 0;
+  position: absolute;
+  margin: 0px 30px 0px 0px;
+}
+
+a:link, a:visited, a:hover, a:active {
+  font-weight: bold;
+  color: var(--sign-in-text);
+  text-decoration: none;
+}
+
+button{
+  background-color: var(--sign-in-text);
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  border: none;
+  padding: 10px 30px 10px 30px;
+}
